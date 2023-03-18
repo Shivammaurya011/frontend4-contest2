@@ -7,9 +7,9 @@ function GenreFilter({arr}) {
     <div className='filter'>
       <h2>Filter by Genre</h2>
       <div className='btn'>
-        {arr.map((data)=>{
+        {arr.map((data, i)=>{
           {return (
-            <button onClick={(e) => console.log(e.target.__reactProps$mp5id9cvumd.children)}>{data}</button>
+            <button key={i} onClick={(e) => console.log(e.target.__reactProps$mp5id9cvumd.children)}>{data}</button>
           )
           }
         })}
