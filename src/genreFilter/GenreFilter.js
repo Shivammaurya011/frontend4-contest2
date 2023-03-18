@@ -9,7 +9,7 @@ function GenreFilter({arr}) {
       <div className='btn'>
         {arr.map((data, i)=>{
           return (
-            <button key={i} onClick={(e) => console.log(e.target.__reactProps$mp5id9cvumd.children)}>{data}</button>
+            <button key={i} onClick={(e) => console.log(e.target.innerText)}>{data}</button>
           )
         })}
       </div>
